@@ -16,4 +16,14 @@ class Ticket extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    }
+
+    public function queue()
+    {
+        return $this->belongsTo(Queue::class,'id','event_id');
+    }
 }

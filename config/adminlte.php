@@ -227,16 +227,7 @@ return [
     'menu' => [
         // Navbar items:
 
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+
 
 
     ],

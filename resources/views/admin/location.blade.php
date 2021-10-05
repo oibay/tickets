@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h3>Пользователи <a class="btn btn-primary" href="{{ url('admin/add-new-user') }}">Добавить</a></h3>
+    <h3>Пользователи <a class="btn btn-primary" href="{{ url('admin/add-new-location') }}">Добавить</a></h3>
 @stop
 
 @section('content')
@@ -11,21 +11,17 @@
         <thead>
         <tr>
             <th>#</th>
-            <th>ФИО</th>
-            <th>Email</th>
-            <th>Локация</th>
-            <th>Пароль</th>
+            <th>Название</th>
+
         </tr>
         </thead>
         <tbody>
-        @if($users->count() > 0)
-            @foreach($users as $item)
+        @if($location->count() > 0)
+            @foreach($location as $item)
                 <tr>
                     <td>{{ $loop->index + 1 }}</td>
-                    <td><a href="{{ url('admin/user/edit/'.$item->id) }}">{{ $item->name }}</a></td>
-                    <td>{{ $item->email }}</td>
-                    <td>{{ $item->location['title'] }}</td>
-                    <td>{{ $item->password_text }}</td>
+                    <td>{{ $item->title }}</td>
+
                 </tr>
             @endforeach
         @endif
