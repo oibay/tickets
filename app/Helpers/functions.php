@@ -15,7 +15,7 @@ if (!function_exists('sendEmail')) {
     function sendEmail($subject, $message,$email)
     {
         $subject = $subject;
-        $headers = "From: AeaLS.kz <support@fssarp.com>\r\nContent-type: text/html; charset=utf-8 \r\n";
+        $headers = "From: RobotHelpDesk <support@fssarp.com>\r\nContent-type: text/html; charset=utf-8 \r\n";
         $d = mail($email, $subject, $message, $headers);
         if ($d) {
             return true;

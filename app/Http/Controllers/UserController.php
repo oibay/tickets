@@ -48,7 +48,7 @@ class UserController extends Controller
             <p>Тема: " . $create->title . "</p>
 			<p>Описание: " . $create->description . "</p>
 			<p>Ваша очередь:".$queue->queue."</p>
-            <p>Статус: <span style='color:green;font-size:20px;font-weight:bold;'>Ожидает</span></p>
+            <p>Статус: <span style='color:red;font-size:20px;font-weight:bold;'>Ожидает</span></p>
             <br>
             <i>Это письмо отправлено <b>роботом</b>
             и отвечать на него не нужно!</i>";
